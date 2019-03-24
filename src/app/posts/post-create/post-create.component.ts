@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-create.component.css']
 })
 export class PostCreateComponent implements OnInit {
+  newPost = 'No';
+
+
+  onAddPost() {
+    this.newPost = 'The user\'s post';
+  }
 
   constructor() { }
 
