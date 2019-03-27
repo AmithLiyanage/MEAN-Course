@@ -3,7 +3,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
-import { MatInputModule, MatCardModule, MatButtonModule, MatToolbarModule, MatExpansionModule } from '@angular/material';
+// import { MatInputModule, MatCardModule, MatButtonModule, MatToolbarModule, MatExpansionModule, MatIconModule } from '@angular/material';
+
+//Combined Material Modules
+import { MaterialModule } from './shared/material.module';
 
 //components
 import { AppComponent } from './app.component';
@@ -25,11 +28,13 @@ import { PostListComponent } from './posts/post-list/post-list.component';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatCardModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatExpansionModule,
+    // MatInputModule,
+    // MatCardModule,
+    // MatButtonModule,
+    // MatToolbarModule,
+    // MatExpansionModule,
+    // MatIconModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
